@@ -1,2 +1,3 @@
-# sonar-scanner
-Dockerized Sonar Scanner
+# Sonar Scanner
+
+Dockerized version of console Sonar Scanner.
