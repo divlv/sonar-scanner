@@ -7,3 +7,6 @@ RUN mkdir -p /opt/app/lib
 COPY lib/* /opt/app/lib
 
 WORKDIR /opt/app/bin
+#
+# Commands will be triggered from outside the container
+#
