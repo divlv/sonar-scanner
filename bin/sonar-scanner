@@ -54,7 +54,8 @@ if [ -z "$java_cmd" -o ! -x "$java_cmd" ] ; then
   exit 1
 fi
 
-project_home=$(pwd)
+#project_home=$(pwd)
+project_home=/src
 
 #echo "Info: Using sonar-scanner at $sonar_scanner_home"
 #echo "Info: Using java at $java_cmd"
