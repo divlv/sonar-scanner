@@ -6,10 +6,11 @@ COPY bin/* /opt/app/bin/
 RUN mkdir -p /opt/app/lib
 COPY lib/* /opt/app/lib/
 
-WORKDIR /opt/app/bin
+RUN mkdir -p /src
 
 RUN ["chmod", "+x", "/opt/app/bin/sonar-scanner"]
 RUN ["chmod", "+x", "/opt/app/bin/sonar-scanner-debug"]
+RUN ["chmod", "777", "/src"]
 
 ENV PATH="/opt/app/bin:${PATH}"
 
